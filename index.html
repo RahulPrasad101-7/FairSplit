@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <button onclick="showPage('home-page')">Home</button>
+            <button onclick="showPage('bills-page')">Bills</button>
+            <button onclick="showPage('history-page')">History</button>
+        </nav>
+
+        <hr>
+
+        <!-- PAGE 1: HOME -->
+        <section id="home-page" class="page-section">
+            <div class="home-content">
+                <h2>Welcome to Roommate Bill Splitter</h2>
+                <p>Easily track expenses and see who owes who money in your apartment.</p>
+                <button class="action-btn" onclick="showPage('bills-page')">Want to split a new bill?</button>
+            </div>
+        </section>
+
+        <!-- PAGE 2: BILLS -->
+        <section id="bills-page" class="page-section hidden">
+            <!-- Add Bill Form -->
+            <form id="bill-form">
+                <h3>Enter Details</h3>
+                <input type="text" id="bill-name" placeholder="What was it for? (e.g., Wifi, Groceries)" required>
+                <input type="number" id="bill-amount" placeholder="Total Amount ($)" required min="0.01" step="0.01">
+                
+                <!-- Input Box 1 -->
+                <input type="text" id="bill-members" placeholder="Members in this bill (e.g., Alex, Ben, Charlie)" required>
+                
+                <!-- Input Box 2 -->
+                <input type="text" id="bill-payer" placeholder="Who paid the bill? (e.g., Alex)" required>
+
+                <button type="submit">Split Bill</button>
+            </form>
+
+            <!-- Status section shown directly below inputs -->
+            <div class="dashboard">
+                <h3>Overall Status</h3>
+                <div id="balances-container">
+                    <!-- Dynamic balance status will display here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: HISTORY -->
+        <section id="history-page" class="page-section hidden">
+            <div class="history">
+                <h3>Transaction History Log</h3>
+                <ul id="expense-list">
+                    <!-- Past transactions will display here -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
