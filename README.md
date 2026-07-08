@@ -1,6 +1,6 @@
 # FairSplit 🏠💰
 
-A simple web application for roommates to split bills and track who owes who. Built entirely with vanilla frontend technologies.
+A simple web application for roommates to split bills and track who owes who. Built entirely with frontend technologies.
 
 ## 🚀 Live Demo
 🔗 [Click here to view the live website](https://RahulPrasad101-7.github.io/FairSplit/)
@@ -18,7 +18,7 @@ A simple web application for roommates to split bills and track who owes who. Bu
 ## 💻 Built With
 * **HTML5** - Structure and layout
 * **CSS3** - Custom styling, responsive cards, and clean buttons
-* **JavaScript (ES6+)** - Dynamic DOM updates and mathematical balance calculations
+* **JavaScript** - Dynamic DOM updates and mathematical balance calculations
 
 ---
 
